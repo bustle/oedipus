@@ -34,7 +34,7 @@ module Oedipus
         @port = options[:port]
 
         @size = options.fetch(:size, 8)
-        @ttl  = options.fetch(:ttl, 60)
+        @ttl  = options.fetch(:ttl, 600)
 
         @available = []
         @used      = {}

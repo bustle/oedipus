@@ -37,7 +37,7 @@ module Oedipus
         host: @options[:host],
         port: @options[:port],
         size: @options.fetch(:pool_size, 8),
-        ttl:  60
+        ttl:  600
       )
 
       assert_valid_pool unless @options[:verify] == false
